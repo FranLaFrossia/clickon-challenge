@@ -9,20 +9,27 @@
 	--GrisOscuro: #666;
 	--GrisOscuro2: #999;
 	--GrisClaro: #222;
+	--GrisClaro2: #ccc;
 	--degrade: ;
 }
 	button {
-		outline: solid 1px var(--GrisOscuro);
-		border: solid 1px #fff;
-		border-radius: 50%;
-		padding: 5px;
+		/*outline: solid 1px var(--GrisOscuro);*/
+		box-shadow: 0 0 0 1px var(--GrisOscuro);
+		border: solid 2px #fff;
+		border-radius: 10px;
+		padding: 4px;
+		display: inline-block;
+		background: var(--GrisClaro2);
+		cursor: pointer;
 	}
 		button span {
+			display: inline-block;
 			font-size: 15px;
 			line-height: 35px;
 			color: var(--GrisOscuro);
 			position: relative;
 			padding: 0 15px;
+			border-radius: 7px;
 			text-transform: uppercase;
 			background: rgba(254,254,254,1);
 			background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(221,221,221,1) 49%, rgba(187,187,187,1) 100%);
@@ -32,9 +39,9 @@
 			background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(221,221,221,1) 49%, rgba(187,187,187,1) 100%);
 			background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(221,221,221,1) 49%, rgba(187,187,187,1) 100%);
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#bbbbbb', GradientType=0 );	
-			-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-			-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+			-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+			box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
 		}
 			button span:before{
 				content: '★'
@@ -42,6 +49,10 @@
 			button span:after {
 				content: '★'
 			}
+		button:hover span {
+			background: var(--GrisClaro2);
+			color: #fff;
+		}
 
 		
 </style>
