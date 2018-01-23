@@ -7,6 +7,7 @@
 <style>
 :root {
 	--GrisOscuro: #666;
+	--GrisOscuroHover: #222;
 	--GrisClaro: #888;
 	--GrisClaro2: #ccc;
 	--degrade: ;
@@ -49,14 +50,18 @@
 				color: var(--GrisClaro);
 				font-size: 19px;
 			}
-		button:hover span {
-			background: var(--GrisClaro2);
-			color: #fff;
+		button:hover {
+			box-shadow: 0 0 0 1px var(--GrisOscuroHover);
+			border: solid 1px #ddd;
 		}
-			button:hover span:before,
-			button:hover span:after {
+			button:hover span {
+				background: var(--GrisClaro2);
 				color: #fff;
 			}
+				button:hover span:before,
+				button:hover span:after {
+					color: #fff;
+				}
 
 		
 </style>
